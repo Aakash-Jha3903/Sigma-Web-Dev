@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background-color: gray;
+        }
+
+        .sub-topic,
+        .card-image {
+            background-color: white;
+        }
+
+        .sub-topic span {
+            background-color: rgba(255, 255, 255, 0.636);
+            border: 2px solid grey;
+            border-radius: 10px;
+            font-size: 14px;
+            padding: 4px 6px;
+            margin-left: 18px;
+        }
+
+        .card {
+            width: 20vw;
+            height: 330px;
+            border-radius: 10px;
+            margin-left: 30%;
+            padding: 20px;
+        }
+
+        .card .text-content {
+            padding: 10px;
+            background-color: white;
+        }
+
+        .card-image {
+            padding: 20px;
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+        }
+
+        .card-image img {
+            width: 16vw;
+            border-radius: 10px;
+            border: none;
+
+        }
+
+        .btn button {
+            background: green;
+            border: 2px solid greenyellow;
+            align-items: center;
+            margin: 5px 0px 0px 37%;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        .btn {
+            background: white;
+            border-end-end-radius: 10px;
+            border-bottom-left-radius: 10px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card-image">
+            <img src="\dev_images\python-django-logo.jpg" alt="card image">
+        </div>
+        <div class="sub-topic">
+            <span>Devlopment</span>
+            <span>Coding</span>
+        </div>
+        <div class="text-content">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. At veritatis fuga aperiam eius ullam accusantium ducimus dicta hic libero repellendus eaque quos voluptas maxime ut atque, eum quibusdam repellat dolores quisquam labore. Quibusdam ducimus cupiditate officia, quo vitae nulla iste consequuntur, asperiores nisi debitis illum nihil quae tempore animi reiciendis distinctio! Consequatur quibusdam eos alias exercitationem!
+        </div>
+        <div class="btn">
+            <button>Read more</button>
+        </div>
+    </div>
+
+</body>
+
+</html>

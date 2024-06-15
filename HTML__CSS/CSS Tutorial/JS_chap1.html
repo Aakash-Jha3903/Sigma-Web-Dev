@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial </title>
+</head>
+
+<body>
+    <div>
+        <h1>JavaScript Tutorial ......</h1>
+        <h2>Enjoyning the jorney at 1x speed with implementation.</h2>
+        <p>Result is in Console </p>
+        <div id="content"></div>
+    </div>
+
+    <script>
+        //Primitive data types in JS
+        let a = null;
+        const b = 123;
+        let c = 'This is a string';
+        let d = Symbol("This is a symbol");
+        let e = true;
+        let f = BigInt("10") + BigInt("20");
+        let g = undefined;    // let g ;
+        console.log(a, b, c, d, e, f, g);
+        console.log(typeof (e));
+
+        //Non-Primitive data types in JS
+        const item = { "name": "bulb", "price": "150" }
+        console.log(item["price"]);
+
+
+
+        // Practice set of chapter 1
+        console.log(b + c);
+        // let p="world";
+
+        const p = "hello";
+        item["name"] = ""
+        console.log(item);
+
+
+        //Comparision operator 
+        let x = 6;
+        let q = "5";
+        console.log(x > q);
+
+        //Ternary Operator
+        let pa = "pass";
+        let fa = "Fail";
+        let marks = 40;
+        console.log(marks > 21 ? pa : fa)
+
+        //Switch - case in JS
+        const expr = 23;
+        switch (expr) {
+            case (1):
+                console.log('Oranges are $0.59 a pound.');
+                break;
+            case 2:
+            case 3:
+                console.log('Mangoes and papayas are $2.79 a pound.');
+                // Expected output: "Mangoes and papayas are $2.79 a pound."
+                break;
+            default:
+                console.log(`number is greater than  ${expr}.`);
+        }
+
+        // // Practice set 2.................
+        // //Question 3
+
+        // let n = prompt("Enter a number : ")
+        // n = parseInt(n);
+        // console.log(typeof n );
+
+        // if (n % 2 == 0 && n % 3 == 0) {
+        //     console.log(n,'is divisible by 2 and 3 both');
+        // }
+        // else {
+        //     console.log(`${n} is NOT  divisible by 2 and 3 both `);
+        // }
+
+
+        //Chapter 3 of JavaScript...................
+        console.log("Chapter 2.............");
+        let obj={
+            zero:0,one:1,two:2,three:3,four:4,five:5
+        }
+        let s="This is a string ";
+        let no=3903;
+        
+        // // for loop
+        // let fact =1;
+        // let num=prompt("Enter a number to finds its factorial : ");
+        // num=parseInt(num);
+        // for(let i=1;i<=num;i++){
+        //     fact*=i;
+
+        // }
+        // console.log(`Factorial of ${num} is ${fact}`);
+
+        //for in loop 
+        // for(let i in obj){
+        //     console.log(i);  }
+
+        //for of loop
+        // for(let i of obj){
+        //     console.log(i);
+        // }
+        
+        //while loop
+        // let i = 0;
+        // while(i<5){
+        //     console.log(i);
+        //     i++;
+        // }
+
+        //Functions.........
+        // function average(m,n){
+        //     console.log((m+n)/2);
+        // }
+        // average(3,5)
+
+        // const sum = (m,n) => {
+            // return m+n
+            // } 
+        // call=sum(2,3);
+        // console.log(call)
+
+        //Escape method of string 
+        // console.log("hello \r world");
+        // const r= "ye le bhai Rs 100";
+        // console.log(r.slice(r));
+
+
+        console.log("\nChapter 3 ############")
+        let ob=[0,1,2,3,4,5];
+        let ob1=[1,2,3]
+        let ob2=[4,5,6]
+        let ob3=['a','b','c']
+        let ob4=['d','e','f']
+        let w = [0,1,2,[3,4,5],6,7,8]
+        let n=[10,20,30,40];
+
+        // xy=delete ob[2]
+        // console.log(xy);
+        // console.log(ob);
+
+        // console.log(ob1+ob2)
+        // console.log(ob3+ob4)
+        // console.log(ob1+ob4)
+        // console.log(ob1.concat(ob2))
+        // console.log(ob3.concat(ob4))
+        // console.log(ob1.concat(ob4))
+
+        // let com = (aa,bb) =>{
+        //         return (aa - bb);
+        // }
+        // console.log(w.sort(com))
+        // console.log(w.sort())
+        
+        // console.log(w[3][2])
+        // let del = w.splice(null,2,10,20)
+        // console.log(del)
+        // console.log(w)
+
+        // Arrayfrom loop in Js
+        // let sr1="Harry";
+        // let sr2="1258";
+        // let ar = Array.from(n);
+        // console.log(ar);
+
+        //for of loop
+        // for(let i in obj){
+        //     console.log(i)
+        // }
+
+        //reduce loop method
+        let a1=[1,2,3,4,5]
+        let a2 = a1.reduce((v1,v2,v3) =>{
+            return(v1+v2+v3)
+            // return(v1*v2)
+        })
+        console.log(a2)
+        console.log(a1)
+
+
+
+
+        //Strings in JS #49 video
+        var str = "Hello's";
+        var name = "Harry";
+        var channel = "CodeWithHarry"
+        var message = "Harry is a good boy";
+        // console.log(str + name + message);
+        var temp = ` ${name} is a nice person and he has a channel called ${channel} `;
+        // BackTicks`` are used when single'' and double" " quotations are used and for a specific case as shown above 
+        console.log(temp);
+        console.log(temp.length);
+        console.log("Hello\ World");
+        console.log("Hello\\ World");
+        console.log("Hello\n World");
+
+        var y = new String("This string is made by constructor ");
+        console.log(y);
+
+        // Dynamically insertion of an element using JS 
+        document.getElementById("content").innerHTML = '<h3> this is a h3 headding </h>';
+
+
+        //String functions #50 video
+        var str1 = "This is a string of video no. 50";
+        console.log(str1.indexOf("s"));
+        console.log(str1.lastIndexOf("s"));
+        console.log(str1.slice(20, 555));
+        console.log(str1.substring(20, 555));
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

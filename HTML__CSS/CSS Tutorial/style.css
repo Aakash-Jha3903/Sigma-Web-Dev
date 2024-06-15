@@ -1,0 +1,21 @@
+#third {
+    background-color: purple;
+    color: blue;
+}
+
+.bg-blue{   
+    background-color: green;
+    color: orange;
+}
+
+/* body {
+    background-color: red;
+} */
+
+#four {
+    background-color: red;
+}
+p {
+    background-color: pink;
+    color:brown;
+}

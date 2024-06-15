@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header nav ol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin: 10px 0px 10px 0px;
+    background: grey;
+    color: white;
+    margin: 0px 0px 30px 0px;
+}
+
+header nav ol li {
+    margin: 20px;
+}
+
+.welcome-txt p {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    max-width: 40%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.multi-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    width: 60%;
+    margin: auto;
+}
+
+.multi-blocks .sanskrit .down-btn {
+    background: green;
+    margin-right: 20px;
+}
+
+.multi-blocks .sanskrit .link-btn {
+    background: rgba(0, 38, 255, 0.653);
+    width: 46px;
+}
+
+.multi-blocks .sanskrit h3 {
+    /* background: rgba(128, 128, 128, 0.259); */
+    text-align: center;
+}
+
+.multi-blocks .sanskrit .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.multi-blocks .sanskrit .down-btn,
+.link-btn {
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    margin-top: 45px;
+}
+
+.multi-blocks .sanskrit {
+    background: rgba(128, 128, 128, 0.259);
+    width: 10vw;
+    padding: 10%;
+    border-radius: 10px;
+
+}
+
+@media screen and (max-width:1400px) {
+    .multi-blocks {
+        display: grid;
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* margin: auto; */
+        grid-template-columns: 1fr;
+    }
+
+    .multi-blocks .sanskrit {
+        width: 40vw;
+        margin: auto;
+    }
+}
