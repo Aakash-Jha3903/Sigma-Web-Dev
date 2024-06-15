@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            background: grey;
+        }
+
+        header {
+            position: sticky;
+            top: 0; /*<<<<<<<<<<<<<<<<<<<<<<<<<<<*/
+        }
+
+        header nav {
+            position: sticky;
+
+        }
+        header nav ul,
+        li {
+            background-color: red;
+            height: 50px;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            background: green;
+            margin: 12px 34px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 50px;
+            margin: 0;
+            text-align: center;
+
+        }
+
+        .box1 {
+            background: pink;
+            width: 150px;
+            height: 150px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box2 {
+            background: blue;
+            width: 150px;
+            height: 150px;
+            color: white;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main .orange-box {
+            /* background: orangered; */
+            background: white;
+            border-radius: 50%;
+        }
+        .orange-box {
+            border: 50%;
+            width: 50px;
+            height: 50px;
+            position: fixed;
+            margin-left: 90%;
+            margin-top: 40%;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+        }
+
+        .text-container h2 {
+            background: black;
+            padding: 20px;
+            border: 1px solid white;
+            border-radius: 10px;
+            color: white;
+            margin: 5px 0px 15px 0px;
+            text-align: center;
+
+
+        }
+
+        .text-container {
+            /* background: black; */
+            /* margin: auto; */
+            padding: 30px;
+            background: #000;
+            color: white;
+
+        }
+
+        footer {
+            background: red;
+            color: white;
+            /* text-align: center; */
+            height: 10vh;
+        }
+
+        main footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+                <li>Services</li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <div class="box1">i am box1</div>
+            <div class="box2">i am box2</div>
+        </div>
+        <div class="orange-box">aj</div>
+        <div class="text-container">
+            <h2>I am sigma web dev</h2>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos velit ex repellat, sapiente voluptatem,
+            consequuntur vitae ipsam iste rem excepturi cum impedit neque asperiores quibusdam fugit nostrum atque
+            tenetur! Iusto minus ducimus, atque fuga eos recusandae, laudantium incidunt vitae consequuntur accusantium
+            ex possimus, repellendus pariatur molestiae tenetur aut itaque provident. Perspiciatis explicabo omnis hic.
+            Repudiandae quam eligendi labore cum numquam soluta deserunt quo velit nam expedita reprehenderit quos minus
+            repellendus ullam doloribus placeat dicta molestias quasi hic, libero quae autem nobis. Explicabo, iure
+            consectetur adipisci facere quaerat minima, nam sint perferendis magnam tenetur nemo iusto sunt saepe illum
+            quisquam ratione! ipsum dolor sit amet consectetur adipisicing elit. Aspernatur unde perferendis facilis
+            molestiae,
+            accusamus minima exercitationem iure? Rem, consequuntur at quia aperiam porro quo deserunt! Sed odit dolorum
+            ea delectus ab inventore alias consectetur qui ad, harum quos, earum itaque, non velit quibusdam quod. Saepe
+            placeat odio architecto possimus impedit! ipsum dolor sit amet consectetur adipisicing elit. Tempore at,
+            nostrum, odit deleniti voluptatem nesciunt sapiente voluptatibus aperiam architecto aspernatur amet
+            provident sunt adipisci, nam pariatur dolorum suscipit hic dolores corrupti? Tempora laborum perferendis
+            laudantium eius accusamus doloribus, minus perspiciatis tenetur deleniti voluptas asperiores veritatis
+            repellendus amet reiciendis. Velit, molestias! ipsum dolor sit amet consectetur adipisicing elit. Voluptatum
+            est ut necessitatibus recusandae totam, magni optio quos, quaerat beatae officia minima eveniet dicta?
+            Voluptatum id accusantium repellat hic neque eligendi aperiam totam aliquam, fugiat tempore non facere ad
+            consequatur quo laboriosam. Laborum magni praesentium cupiditate, iste consequuntur ipsum quod facere. ipsum
+            dolor, sit amet consectetur adipisicing elit. Nam quos mollitia, doloremque maiores eius aut quia,
+            distinctio ad dolorum consequatur reprehenderit suscipit nobis adipisci. Doloribus error in vitae atque
+            saepe natus quos reprehenderit. Repellat aperiam eius cupiditate quas, accusantium assumenda pariatur odit
+            aliquam atque enim laboriosam illo minus dolore ullam est temporibus voluptatem commodi tempora, nostrum
+            quos incidunt, reiciendis similique perspiciatis sequi. Laborum libero similique mollitia dignissimos
+            perspiciatis veritatis magnam distinctio reprehenderit cum culpa laboriosam inventore iure sapiente
+            exercitationem nisi, expedita fuga doloribus tempora? Quos, expedita facere dolore totam eius rerum ipsum
+            minus accusantium alias fuga ab exercitationem minima. ipsum dolor sit, amet consectetur adipisicing elit.
+            Explicabo atque et maxime magni reiciendis a aspernatur aut repellat accusamus distinctio sequi velit,
+            voluptas dolorum nobis dolores qui tempora perspiciatis beatae obcaecati sit, excepturi placeat. Sit natus
+            voluptates provident ipsa minima accusantium. Ad, esse laboriosam eius corporis incidunt recusandae sequi
+            corrupti aut labore a? Nobis quis praesentium, aliquid repudiandae quidem fuga totam doloremque, eos eum
+            nulla tenetur?
+        </div>
+
+        <footer>
+            I am footer
+        </footer>
+    </main>
+</body>
+
+</html>
