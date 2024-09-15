@@ -11,15 +11,14 @@ const App = () => {
 
       <center className='todo-container bg-dark text-white' >
         <Todohead />
-
-        {/* <div className="container"> */}
         <Inputs />
+        <div className="item-container">
         <Items />
         <Items />
         <Items />
         <Items />
         <Items />
-        {/* </div> */}
+        </div>
       </center>
 
     </div>

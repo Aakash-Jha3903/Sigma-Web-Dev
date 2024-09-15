@@ -8,7 +8,7 @@ const Items = () => {
   let time = "09:25 PM"
 
   return (
-    <div className="row ">
+    <div className="row">
       <div className="col-4 my-2 ">
         {text}
 
