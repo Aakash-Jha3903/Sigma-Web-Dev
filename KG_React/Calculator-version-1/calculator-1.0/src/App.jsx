@@ -11,8 +11,7 @@ function App() {
   return (
     <  >
       <h1 className='text-center text-primary mt-5' >Calculator</h1>
-
-      <div className=" container calculator bg-dark col-sm-8 col-md-6 col-lg-4 mt-3  " >
+      <div className=" container calculator bg-dark col col-md-6 col-lg-4 mt-3  " >-sm-8
         <DisplayInput></DisplayInput>
         <ButtonContainer ></ButtonContainer>
       </div>
