@@ -22,5 +22,4 @@ const ButtonContainer = ({ onButtonClicked }) => {
   );
 };
 
-// {/* <button onClick={onButtonClicked} className="btn btn-primary w-100 h-100 d-flex justify-content-center align-items-center"> */}
 export default ButtonContainer;
