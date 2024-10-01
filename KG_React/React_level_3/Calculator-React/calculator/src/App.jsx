@@ -27,7 +27,7 @@ function App() {
         const newDisplayValue = calVal + ans;
         setcalVal(`${calVal}(${ans})`);
       } else {
-        setcalVal(`Error`); // If there's no previous expression, show an error
+        setcalVal(`Error`); // If there's no previous expression, show an error message 
       }
     }else if (bText === "n!") {
       // Updated regex to match numbers with optional parentheses
@@ -71,8 +71,10 @@ function App() {
     <div className='bg-black vh-100 mt-5'>
       <h1 className='text-center text-primary'>Calculator</h1>
       <div className="container calculator bg-dark col col-md-6 col-lg-4 mt-3 pb-5">
+
         <DisplayInput displayValue={calVal}></DisplayInput>
         <ButtonContainer onButtonClicked={onButtonClicked}></ButtonContainer>
+
       </div>
     </div>
   );
