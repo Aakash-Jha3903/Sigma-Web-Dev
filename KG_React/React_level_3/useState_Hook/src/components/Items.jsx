@@ -11,10 +11,10 @@ const Items = ({ food_items, bought, handleBuyButton }) => {
   return (
     <div>
       <ul className=' list-unstyled' >
-        <li className={`list-group-items m-1 
+        <li className={` d-flex justify-content-between  m-1 
         list-group-item ${bought && "active" } `}>
           <span>{food_items}</span>
-          <button className={`${styles.button} btn btn-success rounded `}
+          <button className={`${styles.button}  btn btn-success rounded `}
 
             // All these below are working, and ......
             // onClick={()=> console.log(`buy button ${props.food_items}`)}   >
