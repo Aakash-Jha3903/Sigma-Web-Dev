@@ -20,7 +20,7 @@ function App() {
         setAns(result);
 
       } catch (error) {
-        setcalVal(`Error ; ${error}`);
+        setcalVal(`Error : ${error}`);
       }
     } else if (bText === "Ans") {
       if (ans) {

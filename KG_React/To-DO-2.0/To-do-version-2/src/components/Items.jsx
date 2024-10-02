@@ -2,7 +2,7 @@ import React from 'react'
 
 
 // function Items = () => {
-const Items = ({ todo_text, todo_date, todo_time }) => {
+const Items = ({ todo_text, todo_date, todo_time, onDeleteClick }) => {
   // let todo_text = "Practising Vite-React";
   // let todo_date = "15-09-2024"
   // let todo_time = "09:25 PM"
@@ -22,7 +22,10 @@ const Items = ({ todo_text, todo_date, todo_time }) => {
       <div className="col-3  d-flex ">
         <div className="d-grid gap-2 d-md-flex justify-content-center py-1 w-100">
           <button className="btn btn-primary me-md-2 px-100  w-100" type="button">Edit</button>
-          <button className="btn btn-danger px-3 w-100" type="button">Delete</button>
+          <button className="btn btn-danger px-3 w-100"
+           type="button"
+           onClick={()=>onDeleteClick(todo_text)  }>
+            Delete</button>
         </div>
       </div>
     </div>
