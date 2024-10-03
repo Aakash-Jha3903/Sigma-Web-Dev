@@ -20,19 +20,23 @@ const App = () => {
 
   const handleNewItem = (item_name, item_due_date, item_due_time) => {
     console.log(`New item added is ${item_name} , Date: ${item_due_date} , Time: ${item_due_time}  `)
+    if (!item_name || item_name.trim() === "") {
+      alert("Task name cannot be empty");
+      return;
+    }
     const new_todo_items = [...todo_items,
     {
       todo_name: item_name,
       todo_date: item_due_date,
       todo_time: item_due_time
     },
-  ];
-
+    ];
     set_todo_items(new_todo_items);
 
+
   };
-  const handleDeleteItem = (todo_item_name) => { 
-    const new_todo_items = todo_items.filter((x) => x.todo_name!== todo_item_name);
+  const handleDeleteItem = (todo_item_name) => {
+    const new_todo_items = todo_items.filter((x) => x.todo_name !== todo_item_name);
     set_todo_items(new_todo_items);
     console.log(`item deleted : ${todo_item_name}`)
   };
