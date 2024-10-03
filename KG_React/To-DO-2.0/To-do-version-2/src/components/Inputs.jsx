@@ -3,9 +3,9 @@ import React, { useState } from 'react'
 
 const Inputs = ({onNewItem}) => {
 
-    const [todo_name,set_todo_name] = useState();
-    const [todo_date,set_todo_date] = useState();
-    const [todo_time,set_todo_time] = useState();
+    const [todo_name,set_todo_name] = useState("");  // giving the empty value ("") to avoid the error 
+    const [todo_date,set_todo_date] = useState("");  // Problem : The warning you're encountering in React refers to the behavior of controlled vs uncontrolled components
+    const [todo_time,set_todo_time] = useState("");  // Solution : If you're rendering an empty form, initialize it as an empty string (""), not undefined
 
     const handleNameChange = (event) => {
         set_todo_name(event.target.value);
