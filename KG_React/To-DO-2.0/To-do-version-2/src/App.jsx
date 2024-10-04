@@ -33,7 +33,6 @@ const App = () => {
     ];
     set_todo_items(new_todo_items);
 
-
   };
   const handleDeleteItem = (todo_item_name) => {
     const new_todo_items = todo_items.filter((x) => x.todo_name !== todo_item_name);
