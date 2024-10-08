@@ -46,7 +46,7 @@ const Inputs = ({ onNewItem }) => {
                 <input type="time"
                     value={todo_time}
                     onChange={handleTimeChange} /></div>
-
+                    
             <div className="col-3">
                 <div className="d-grid d-md-block my-2">
                     <button
