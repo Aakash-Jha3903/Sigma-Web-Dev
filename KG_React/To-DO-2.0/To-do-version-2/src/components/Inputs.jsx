@@ -1,5 +1,5 @@
 // import React from 'react'
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { SiCreatereactapp } from "react-icons/si";
 
 
@@ -19,7 +19,8 @@ const Inputs = ({ onNewItem }) => {
         set_todo_time(event.target.value);
     };
 
-    const handleAddbutton = () => {
+    const handleAddbutton = (event) => {
+        event.preventDefault();
         onNewItem(todo_name, todo_date, todo_time);
 
         set_todo_name("");
